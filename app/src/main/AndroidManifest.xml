@@ -13,6 +13,12 @@
         android:theme="@style/Theme.Androidnewsapp"
         tools:targetApi="31">
         <activity
+            android:name="presentation.spalsh.splashActivity"
+            android:exported="false" />
+        <activity
+            android:name="presentation.spalsh.splashScreen"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
