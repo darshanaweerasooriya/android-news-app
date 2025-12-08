@@ -13,6 +13,18 @@
         android:theme="@style/Theme.Androidnewsapp"
         tools:targetApi="31">
         <activity
+            android:name="presentation.component.nav_barActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="presentation.favorites.favouriteActivity"
+            android:exported="false" />
+        <activity
             android:name="presentation.news.ActupdateNewsivity"
             android:exported="false" />
         <activity
@@ -26,13 +38,8 @@
             android:exported="false" />
         <activity
             android:name="presentation.register.registerActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="false"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <activity
             android:name="presentation.spalsh.splashActivity"
             android:exported="false" /> <!-- <activity -->
