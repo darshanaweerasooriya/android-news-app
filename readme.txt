@@ -61,4 +61,4 @@ This is an Android application developed using **Kotlin** that fetches news from
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/android-news-app.git
+git clone https://github.com/darshanaweerasooriya/android-news-app.git
