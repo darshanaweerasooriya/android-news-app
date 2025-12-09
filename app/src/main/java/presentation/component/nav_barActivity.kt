@@ -9,6 +9,8 @@ import com.example.android_news_app.R
 import android.widget.ImageView
 import presentation.favorites.favouriteActivity
 import presentation.home.homeActivity
+import  presentation.profile.profileActivity
+
 import android.content.Intent
 
 
@@ -30,7 +32,7 @@ class nav_barActivity : AppCompatActivity() {
 
         // Account
         findViewById<ImageView>(R.id.nav_user).setOnClickListener {
-            startActivity(Intent(this, homeActivity::class.java))
+            startActivity(Intent(this, profileActivity::class.java))
         }
     }
 }

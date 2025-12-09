@@ -13,8 +13,11 @@
         android:theme="@style/Theme.Androidnewsapp"
         tools:targetApi="31">
         <activity
+            android:name="presentation.profile.profileActivity"
+            android:exported="false" />
+        <activity
             android:name="presentation.component.nav_barActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -38,8 +41,7 @@
             android:exported="false" />
         <activity
             android:name="presentation.register.registerActivity"
-            android:exported="false"/>
-
+            android:exported="false" />
         <activity
             android:name="presentation.spalsh.splashActivity"
             android:exported="false" /> <!-- <activity -->
