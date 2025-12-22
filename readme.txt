@@ -1,6 +1,6 @@
 # Android News App
 
-This is an Android application developed using **Kotlin** that fetches news from the [News API](https://newsapi.org/) and displays it to users in a clean and interactive interface. The app follows **MVVM architecture** and **Clean Architecture principles** while utilizing **Jetpack components**, **coroutines**, and **Room Database** for local storage.
+This is an Android application developed using **Kotlin** that fetches news from the (https://newsapi.org/) and displays it to users in a clean and interactive interface. The app follows **MVVM architecture** and **Clean Architecture principles** while utilizing **Jetpack components**, **coroutines**, and **Room Database** for local storage.
 
 ---
 
