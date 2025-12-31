@@ -8,7 +8,7 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.android_news_app.R
 import android.widget.ImageView
 import presentation.favorites.favouriteActivity
-import presentation.home.homeActivity
+import presentation.home.HomeActivity
 import  presentation.profile.profileActivity
 
 import android.content.Intent
@@ -22,7 +22,7 @@ class nav_barActivity : AppCompatActivity() {
 
         // Home
         findViewById<ImageView>(R.id.nav_dashboard).setOnClickListener {
-            startActivity(Intent(this, homeActivity::class.java))
+            startActivity(Intent(this, HomeActivity::class.java))
         }
 
         // Favourite

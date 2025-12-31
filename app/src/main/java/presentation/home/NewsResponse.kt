@@ -1,16 +1,20 @@
 package presentation.home
 
-import android.icu.text.CaseMap.Title
-import android.media.Image
 
 data class NewsResponse(
-    val status: String,
-    val totalResult: Int,
-    val articles: List<Article>
+    val status: String?,
+    val totalResults: Int?,
+    val articles: List<Article> = emptyList()
 )
-
 data class Article(
-    val title: String,
+    val source: Source?,
+    val title: String?,
     val description: String?,
     val urlToImage: String?
+)
+
+
+data class Source(
+    val id: String?,
+    val name: String?
 )

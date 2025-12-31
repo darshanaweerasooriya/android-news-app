@@ -1,21 +1,29 @@
 package presentation.profile
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.android_news_app.R
+import presentation.register.UserPref
 
 class profileActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_profile)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+
+        val txtName = findViewById<TextView>(R.id.txtName)
+        val txtEmail = findViewById<TextView>(R.id.txtEmail)
+
+        val userPref = UserPref(this)
+        val user = userPref.getUser()
+
+        if (user != null) {
+            txtName.text = user.name
+            txtEmail.text = user.email
+        } else {
+            txtName.text = "No user found"
+            txtEmail.text = ""
         }
     }
 }
