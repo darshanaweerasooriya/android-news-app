@@ -12,6 +12,8 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.android_news_app.R
 import presentation.component.nav_barActivity
 import presentation.login.loginActivity
+import android.widget.TextView
+
 
 class registerActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -50,13 +52,17 @@ class registerActivity : AppCompatActivity() {
 
             startActivity(Intent(this, nav_barActivity::class.java))
             finish()
+
+            val loginText = findViewById<TextView>(R.id.loginBtn)
+            loginText.setOnClickListener {
+                startActivity(Intent(this, loginActivity::class.java))
+                finish()
+            }
         }
 
-//        val loginBtn = findViewById<Button>(R.id.loginBtn)
-//        loginBtn.setOnClickListener {
-//            startActivity(Intent(this, loginActivity::class.java))
-//            finish()
-//        }
+
+
     }
+
 
 }
